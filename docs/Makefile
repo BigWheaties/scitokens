@@ -40,7 +40,6 @@ help:
 
 clean:
 	-rm -rf $(BUILDDIR)/*
-	pip install pydata-sphinx-theme
 	
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
