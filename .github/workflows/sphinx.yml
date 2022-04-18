@@ -1,3 +1,4 @@
+# Uses https://github.com/ammaraskar/sphinx-action to build new documentation whenever the GitHub repo is modified
 name: documentation_build
 
 on:
@@ -7,22 +8,19 @@ on:
 
 jobs:
   build:
-
+    # Builds the HTML output
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
-    # Standard drop-in approach that should work for most people.
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-    # Create an artifact of the html output.
     - uses: actions/upload-artifact@v1
       with:
         name: DocumentationHTML
         path: docs/build/html/
-    # Publish built docs to gh-pages branch.
-    # ===============================
+
+    # Publish built docs to gh-pages branch
     - name: Commit documentation changes
       run: |
         git clone https://github.com/ammaraskar/sphinx-action-test.git --branch gh-pages --single-branch gh-pages
@@ -42,4 +40,3 @@ jobs:
         directory: gh-pages
         force: true
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    # ===============================
