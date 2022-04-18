@@ -229,19 +229,15 @@ You may set the configuration by passing a file name to ``scitokens.set_config``
     
 See :py:func:`~scitokens.utils.config.set_config`
 
+..
+    Project Status
+    ==============
+    image:: https://api.codacy.com/project/badge/Coverage/ad1f7b31145f4b9a96d58ec736d6f00c
+..    
+    :target: https://www.codacy.com/app/scitokens/scitokens?        utm_source=github.com&utm_medium=referral&utm_content=scitokens/scitokens&utm_campaign=Badge_Coverage
+    :alt: Code Test Coverage
 
-Project Status
-==============
-
-.. image:: https://travis-ci.org/scitokens/scitokens.svg?branch=master
-   :target: https://travis-ci.org/scitokens/scitokens
-   :alt: Travis-CI Build Status
-
-.. image:: https://api.codacy.com/project/badge/Coverage/ad1f7b31145f4b9a96d58ec736d6f00c
-   :target: https://www.codacy.com/app/scitokens/scitokens?utm_source=github.com&utm_medium=referral&utm_content=scitokens/scitokens&utm_campaign=Badge_Coverage
-   :alt: Code Test Coverage
-
-.. image:: https://api.codacy.com/project/badge/Grade/ad1f7b31145f4b9a96d58ec736d6f00c
+.. 
+    image:: https://api.codacy.com/project/badge/Grade/ad1f7b31145f4b9a96d58ec736d6f00c
    :target: https://www.codacy.com/app/scitokens/scitokens?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=scitokens/scitokens&amp;utm_campaign=Badge_Grade
    :alt: Codacy Grade
-
